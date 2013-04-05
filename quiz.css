@@ -1,0 +1,7 @@
+#headerDiv{text-align:center;}
+#moduleListDiv { text-align:center; padding:0px 0px 0px 0px; }
+ul {list-style-type:none;}
+#quizBody { overflow:scroll;height:350px; max-height:350px; 
+           overflow-x:hidden;border:thin inset black;}
+#footer{text-align:center;}
+body {margin-top:0px;}
