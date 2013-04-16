@@ -1,0 +1,27 @@
+{
+  "name": "Quiz_javascript",
+  "version": "0.1.0",
+  "description": "Quiz application",
+  "main": "main.js",
+  "dependencies": {
+    "grunt": "~0.4.1"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.0rc2",
+    "grunt-contrib-jshint": "~0.4.3",
+    "grunt-s3": "~0.2.0-alpha",
+    "grunt-contrib-uglify": "~0.2.0",
+    "grunt-contrib-concat": "~0.2.0",
+    "grunt-contrib-jasmine": "~0.4.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NVijetha/Quiz_javascript.git"
+  },
+  "author": "Vijetha",
+  "license": "BSD",
+  "gitHead": "e7b509fbf94e3e093247af365f78b2886ffe50e9"
+}

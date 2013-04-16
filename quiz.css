@@ -5,3 +5,6 @@ ul {list-style-type:none;}
            overflow-x:hidden;border:thin inset black;}
 #footer{text-align:center;}
 body {margin-top:0px;}
+.quiz_module {
+	margin-right:10px;
+}
