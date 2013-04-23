@@ -1,5 +1,5 @@
 //main.js
-require(["jquery", "questions"], function($, quizModule) {
+require(["jquery", "scripts/questions.js"], function($, quizModule) {
     "use strict";
 	/*global document: false */
 	/*jslint devel: true */
@@ -172,7 +172,7 @@ require(["jquery", "questions"], function($, quizModule) {
         });
     });
 });
-define(["quiz"], function(Quiz) {
+define(['scripts/quiz.js'], function(Quiz) {
     "use strict";
     var quizModule = new Quiz("General Quiz"),
         noOfModules = 0,

@@ -7,12 +7,13 @@
     "grunt": "~0.4.1"
   },
   "devDependencies": {
-    "grunt": "~0.4.0rc2",
     "grunt-contrib-jshint": "~0.4.3",
-    "grunt-s3": "~0.2.0-alpha",
     "grunt-contrib-uglify": "~0.2.0",
     "grunt-contrib-concat": "~0.2.0",
-    "grunt-contrib-jasmine": "~0.4.2"
+    "grunt": "~0.4.1",
+    "phantomjs": "~1.9.0-2",
+    "grunt-contrib-jasmine": "~0.4.2",
+    "grunt-template-jasmine-requirejs": "~0.1.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

@@ -1,12 +1,14 @@
+//Gruntfile.js
 module.exports = function(grunt){
+	var srcFiles = 'scripts/*.js';
     grunt.initConfig({
 	    pkg: grunt.file.readJSON('package.json'),
 		jshint: {
-		    all: ['scripts/main.js', 'scripts/quiz.js', 'scripts/questions.js']
+		    all: [srcFiles]
 		},
 		concat: {
 			'myproject': {
-				src: ['scripts/main.js', 'scripts/questions.js', 'scripts/quiz.js'],
+				src: [srcFiles],
 				dest: 'build/fileoutput.js'
 			}
 		},
@@ -18,17 +20,21 @@ module.exports = function(grunt){
 			}
 		},
 		jasmine: {
-		    'myproject' : {
-				src: 'build/**/*.min.js',
+			pivotal: {
+				src: [srcFiles],
 				options: {
-					specs: 'spec/**/*_spec.js'
+					specs: 'scripts/spec/test_spec.js',
+					timeout : 10000,
+					template: require('grunt-template-jasmine-requirejs')
 				}
 			}
 		}
 	});
+
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-jshint');
 	grunt.loadNpmTasks('grunt-contrib-concat');
 	grunt.loadNpmTasks('grunt-contrib-jasmine');
-	grunt.registerTask('default',['jshint', 'concat', 'uglify', 'jasmine']);
+
+	grunt.registerTask('default', ['jshint', 'concat', 'uglify', 'jasmine']);
 };

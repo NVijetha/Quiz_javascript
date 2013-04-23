@@ -1,3 +1,4 @@
+//quiz.js
 define(function() {
     "use strict";
     function Quiz(name) {

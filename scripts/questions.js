@@ -1,4 +1,5 @@
-define(["quiz"], function(Quiz) {
+//questions.js
+define(['scripts/quiz.js'], function(Quiz) {
     "use strict";
     var quizModule = new Quiz("General Quiz"),
         noOfModules = 0,
